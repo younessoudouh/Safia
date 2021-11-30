@@ -16,7 +16,7 @@ body {
     border-color: #162044!important;
 }
 
-.navbar {
+.bb {
     border-bottom: 1px solid rgba(78, 90, 133, 0.2);
 }
 
@@ -37,3 +37,34 @@ header h1 {
 
 
 /* end header */
+
+
+/* start Features */
+
+.width {
+    max-width: 350px;
+}
+
+.features img {
+    height: 40px;
+}
+
+.border-color {
+    border-color: rgba(78, 90, 133, 0.2)!important;
+}
+
+.rounded-24 {
+    border-radius: 24px!important;
+}
+
+img[alt="arrow"] {
+    width: 16px;
+    height: 16px;
+}
+
+.opacity {
+    opacity: 50%;
+}
+
+
+/* end Features */
