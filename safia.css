@@ -86,6 +86,8 @@ img[alt="arrow"] {
     background: #081131!important;
     box-shadow: 0px 35px 45px rgba(7, 14, 39, 0.05)!important;
     border-radius: 16px!important;
+    transition: 1s all;
+    cursor: pointer;
 }
 
 .cart {
@@ -98,16 +100,14 @@ img[alt="arrow"] {
     color: #CCD2E9;
 }
 
-
-/* .card-title {
-    font-weight: 500;
-    font-size: 20px;
-    font-family: inherit;
-} */
-
 .btn-background {
     background: #4E5A85!important;
     border-color: #4E5A85!important;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    filter: brightness(150%);
 }
 
 
@@ -116,9 +116,8 @@ img[alt="arrow"] {
 
 /* start work */
 
-.shape {
-    height: 300px;
-    width: 400px;
+img[alt="group"] {
+    width: 100%;
 }
 
 
