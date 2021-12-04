@@ -5,6 +5,7 @@
 
 :root {
     --primary-color: #070E27;
+    --secondary-color: #0059F7;
 }
 
 body {
@@ -15,9 +16,18 @@ body {
 
 /* start navbar */
 
-.btn-secondary {
-    background-color: #162044!important;
-    border-color: #162044!important;
+.navbar .btn-secondary {
+    background-color: #162044;
+    border-color: #162044;
+}
+
+.navbar .btn-secondary:hover {
+    background-color: #10193a;
+    border-color: #10193a;
+}
+
+.p-muted {
+    color: #7E8BB6;
 }
 
 .bb {
@@ -26,6 +36,7 @@ body {
 
 .navbar span {
     font-size: 25px;
+    font-weight: 600;
 }
 
 
@@ -54,12 +65,27 @@ header h1,
     height: 40px;
 }
 
-.border-color {
-    border-color: rgba(78, 90, 133, 0.2)!important;
+.container .border-color {
+    border-color: rgba(78, 90, 133, 0.2);
 }
 
 .rounded-24 {
-    border-radius: 24px!important;
+    border-radius: 24px;
+}
+
+.rounded-24 button {
+    transition: 1s all;
+}
+
+.rounded-24 button {
+    background: #689EFF;
+    border-color: #689EFF;
+}
+
+.rounded-24 button:hover {
+    background: #538df8;
+    border-color: #538df8;
+    transform: scale(1.1);
 }
 
 img[alt="arrow"] {
@@ -69,6 +95,10 @@ img[alt="arrow"] {
 
 .opacity {
     opacity: 50%;
+}
+
+.background {
+    background: var(--secondary-color);
 }
 
 
@@ -82,32 +112,44 @@ img[alt="arrow"] {
     font-weight: 600;
 }
 
-.card {
-    background: #081131!important;
-    box-shadow: 0px 35px 45px rgba(7, 14, 39, 0.05)!important;
-    border-radius: 16px!important;
+.first-last .card {
+    background: #081131;
+    box-shadow: 0px 35px 45px rgba(7, 14, 39, 0.05);
+    border-radius: 16px;
     transition: 1s all;
     cursor: pointer;
 }
 
-.cart {
-    background: #162044!important;
-    box-shadow: 0px 35px 45px rgba(7, 14, 39, 0.05)!important;
-    border-radius: 16px!important;
+.card-container .card {
+    background: #162044;
+    box-shadow: 0px 35px 45px rgba(7, 14, 39, 0.05);
+    border-radius: 16px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.card-container button {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 .card ul li {
     color: #CCD2E9;
 }
 
-.btn-background {
-    background: #4E5A85!important;
-    border-color: #4E5A85!important;
+.card-body .btn-background {
+    background: #4E5A85;
+    border-color: #4E5A85;
 }
 
-.card:hover {
+.card-body .btn-background:hover {
+    background: #46599c;
+    border-color: #4E5A85;
+}
+
+.pricing .card:hover {
     transform: scale(1.1);
-    filter: brightness(150%);
+    background: #1a213a;
 }
 
 
