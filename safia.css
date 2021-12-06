@@ -173,6 +173,11 @@ body .btn {
     cursor: pointer;
 }
 
+.card-container button:hover {
+    background-color: #1f66df;
+    border-color: #1f66df;
+}
+
 .card-container button {
     background: var(--secondary-color);
     border-color: var(--secondary-color);
