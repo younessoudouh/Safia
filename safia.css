@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
 * {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding: 0;
 }
 
 :root {
@@ -9,7 +15,8 @@
 }
 
 body {
-    background-color: var(--primary-color)!important;
+    --bs-body-bg: #070E27;
+    background-color: var(--bs-body-bg);
     font-family: 'Sora', sans-serif!important;
 }
 
@@ -19,6 +26,7 @@ body {
 .navbar .btn-secondary {
     background-color: #162044;
     border-color: #162044;
+    font-weight: 500;
 }
 
 .navbar .btn-secondary:hover {
@@ -57,8 +65,13 @@ header h1,
 
 /* start Features */
 
+.features-title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
 .width {
-    max-width: 350px;
+    max-width: 400px;
 }
 
 .features img {
@@ -101,6 +114,34 @@ img[alt="arrow"] {
     background: var(--secondary-color);
 }
 
+.blue-area {
+    padding: 72px 110px;
+}
+
+.blue-area-title {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.features-subtitle .col-md-4:nth-child(odd) {
+    padding: 0;
+    padding-right: 20px;
+}
+
+.features-subtitle .col-md-4:nth-child(even) {
+    padding: 0;
+    padding-left: 20px;
+}
+
+.features-subtitle {
+    padding-bottom: 32px;
+}
+
+body .btn {
+    border-radius: 8px!important;
+    padding: 20px 24px;
+}
+
 
 /* end Features */
 
@@ -108,7 +149,7 @@ img[alt="arrow"] {
 /* start pricing */
 
 .pricing h1 {
-    font-size: 46px;
+    font-size: 48px;
     font-weight: 600;
 }
 
@@ -118,6 +159,10 @@ img[alt="arrow"] {
     border-radius: 16px;
     transition: 1s all;
     cursor: pointer;
+}
+
+.pricing .row .first-last {
+    margin-top: 81px;
 }
 
 .card-container .card {
@@ -162,6 +207,47 @@ img[alt="group"] {
     width: 100%;
 }
 
+.work {
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.work-container .col-md-5 {
+    padding: 0;
+}
+
+.work-container .row {
+    gap: 110px;
+}
+
+.work-container h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.work-container p {
+    font-size: 20px;
+}
+
+.last-blue-area {
+    padding: 56px 52px;
+}
+
+.last-blue-area span {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: 'Sora', sans-serif!important;
+    line-height: 16px;
+}
+
+.last-blue-area h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+}
+
 
 /* end work */
 
@@ -172,6 +258,10 @@ footer {
     background: #162044;
     color: #CCD2E9;
     font-size: 14px;
+}
+
+footer i {
+    margin-right: 44px;
 }
 
 
