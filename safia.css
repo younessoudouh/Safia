@@ -5,8 +5,11 @@
     margin: 0;
 }
 
-.container {
+.main-container {
     padding: 0;
+    max-width: 1275px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 :root {
@@ -47,6 +50,14 @@ body {
     font-weight: 600;
 }
 
+.navbar .main-container {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 
 /* end navbar */
 
@@ -78,7 +89,7 @@ header h1,
     height: 40px;
 }
 
-.container .border-color {
+.main-container .border-color {
     border-color: rgba(78, 90, 133, 0.2);
 }
 
@@ -138,7 +149,7 @@ img[alt="arrow"] {
 }
 
 body .btn {
-    border-radius: 8px!important;
+    border-radius: 8px;
     padding: 20px 24px;
 }
 
